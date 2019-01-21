@@ -1,4 +1,4 @@
-# Foo Vue
+# Vueltap
 
 > A Vue.js project
 
