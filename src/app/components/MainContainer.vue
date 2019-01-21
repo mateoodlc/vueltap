@@ -2,7 +2,7 @@
 
 <script>
     import AppHeader from "app/components/AppHeader.vue";
-    import MainButton from "app/components/MainButton.vue";
+    import MainButton from "app/components/specific/MainButton.vue";
     import BackgroundVideo from "foo/components/BackgroundVideo.vue";
 
     export default {
@@ -32,6 +32,12 @@
 
 <template>
     <div class="MainContainer">
+        <div class="Content-container">
+            <app-header></app-header>
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
+        </div>
         <!--<background-video
             :containerWidth="width"
             :containerHeight="height"
@@ -44,22 +50,5 @@
             src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">
         </background-video>
         -->
-        <app-header></app-header>
-        <main-button
-            buttonText = "Auri"
-        ></main-button>
-        <main-button
-            buttonText = "Auri"
-            small
-            border
-        ></main-button>
-        <main-button
-            buttonText = "Auri"
-            red
-            iconSrc = "../../src/assets/img/arrows/arrow_yellow.png"
-        ></main-button>
-        <keep-alive>
-            <router-view></router-view>
-        </keep-alive>
     </div>
 </template>

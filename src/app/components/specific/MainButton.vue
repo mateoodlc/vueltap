@@ -26,7 +26,7 @@
                 type: Boolean,
                 default: false,
             },
-            small: {
+            extraSmall: {
                 type: Boolean,
                 default: false,
             },
@@ -49,13 +49,13 @@
 </script>
 
 <template>
-    <div class="MainButton" :style="{width: this.small ? '160px' : '225px', 
+    <div class="MainButton" :style="{width: this.small ? '160px' : this.extraSmall ? '113px' : '225px', 
     backgroundColor: 
     border ? 'transparent' : red ? '#FF3D3D' : this.backgroundColor, 
     color: red ? '#fff' : this.border ? '#fff' : '#000', 
-    border: this.border ? '1px solid white' : none,
+    border: this.border ? '2px solid white' : none,
     }">
         <p>{{this.buttonText}}</p>
-        <img v-if="!this.small" :src="red ? yellowSrc : blackSrc" width=19/>
+        <img v-if="!this.small" v-show="!this.extraSmall" :src="red ? yellowSrc : blackSrc" width=19/>
     </div>
 </template>
