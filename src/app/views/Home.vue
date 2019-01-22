@@ -81,7 +81,7 @@
 <template>
     <main-transition>
         <div class="Home">
-            <div class="Home-banner_container">
+            <section class="Home-banner_container">
                 <div class="Home-banner_content">
                     <div class="Home-banner_content_description">
                         <h1>Envíos, Logística y Mensajería express en Bogotá</h1>
@@ -116,7 +116,35 @@
                     </div>
                 </div>
                 <div class="Home-banner_rotated"></div>
-            </div>
+                <div class="Home-banner_steps">
+                    <div class="delivery-person_image" style="background-image: url('../../src/assets/img/delivery_man.png')"></div>
+                    <div class="delivery-steps">
+                        <h3 class="Light-text">Tus envíos en tiempo record</h3>
+                        <div class="delivery-steps_row">
+                            <icon-component iconSrc="../../src/assets/img/icons/box.png"></icon-component>
+                            <div class="delivery-steps_row-description">
+                                <p class="Paragraph-red">1. Solicita un envío</p>
+                                <p class="Light-text Paragraph-small">Ingresa la dirección de recogida, la de entrega y las instrucciones para el mensajero</p>
+                            </div>
+                        </div>
+                        <div class="delivery-steps_row">
+                            <icon-component iconSrc="../../src/assets/img/icons/box.png"></icon-component>
+                            <div class="delivery-steps_row-description">
+                                <p class="Paragraph-red">1. Solicita un envío</p>
+                                <p class="Light-text Paragraph-small">Ingresa la dirección de recogida, la de entrega y las instrucciones para el mensajero</p>
+                            </div>
+                        </div>
+                        <div class="delivery-steps_row">
+                            <icon-component iconSrc="../../src/assets/img/icons/box.png"></icon-component>
+                            <div class="delivery-steps_row-description">
+                                <p class="Paragraph-red">1. Solicita un envío</p>
+                                <p class="Light-text Paragraph-small">Ingresa la dirección de recogida, la de entrega y las instrucciones para el mensajero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class=""></section>
         </div>
     </main-transition>
 </template>
