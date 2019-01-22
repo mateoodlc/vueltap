@@ -88,24 +88,24 @@
                         <p class="Center">Vueltap te ofrece mensajeros disponibles por toda la ciudad para que hagan tus entregas de manera rápida y segura.</p>
                     </div>
                     <div class="Home-banner_content_delivery-card">
-                        <h3 class="Light-text">Solicita tu envío ahora</h3>
+                        <h3 class="Light-text delivery-card_title" style="text-align: center;">Solicita tu envío ahora</h3>
                         <div class="delivery-card_second_row">
                             <div class="delivery-card_second_row-column">
                                 <div class="Inline-content">
                                     <icon-component iconSrc='../../src/assets/img/icons/pin.png' small></icon-component>
-                                    <p class="Inline-text Light-text Paragraph-small">Ingresa dirección de recogida</p>
+                                    <p class="Inline-text Light-text Paragraph-small">Ingresa dirección de entrega</p>
                                 </div>
                                 <input type="text" placeholder="Ej: Calle 100 # 10 - 60">
                             </div>
                             <div class="delivery-card_second_row-column">
                                 <div class="Inline-content">
                                     <icon-component iconSrc='../../src/assets/img/icons/pin.png' small></icon-component>
-                                    <p class="Inline-text Light-text Paragraph-small">Ingresa dirección de recogida</p>
+                                    <p class="Inline-text Light-text Paragraph-small">Ingresa dirección de entrega</p>
                                 </div>
                                 <input type="text" placeholder="Ej: Calle 100 # 10 - 60">
                             </div>
+                            <p class="Paragraph-red Paragraph-small delivery-card_note" style="width: 100%;">Si necesitas incluir más puntos de entrega, haz <strong> click aquí</strong></p>
                         </div>
-                        <p class="Paragraph-red Paragraph-small" style="width: 100%; text-align: right;">Si necesitas incluir más puntos de entrega, haz <strong> click aquí</strong></p>
                         <div class="Separator-line"></div>
                         <div class="delivery-card_summary">
                             <div class="delivery-card_summary-total">
@@ -120,7 +120,7 @@
                 <div class="Home-banner_steps">
                     <div class="delivery-person_image" style="background-image: url('../../src/assets/img/delivery_man.png')"></div>
                     <div class="delivery-steps">
-                        <h3 class="Light-text">Tus envíos en tiempo record</h3>
+                        <h2 class="Title Light-text">Tus envíos en tiempo record</h2>
                         <div class="delivery-steps_row">
                             <icon-component iconSrc="../../src/assets/img/icons/box.png"></icon-component>
                             <div class="delivery-steps_row-description">
@@ -129,17 +129,17 @@
                             </div>
                         </div>
                         <div class="delivery-steps_row">
-                            <icon-component iconSrc="../../src/assets/img/icons/box.png"></icon-component>
+                            <icon-component iconSrc="../../src/assets/img/icons/money_ticket.png"></icon-component>
                             <div class="delivery-steps_row-description">
-                                <p class="Paragraph-red">1. Solicita un envío</p>
-                                <p class="Light-text Paragraph-small">Ingresa la dirección de recogida, la de entrega y las instrucciones para el mensajero</p>
+                                <p class="Paragraph-red">2. Pago fácil</p>
+                                <p class="Light-text Paragraph-small">Selecciona el medio de pago que mejor se ajuste a tus necesidades.</p>
                             </div>
                         </div>
                         <div class="delivery-steps_row">
-                            <icon-component iconSrc="../../src/assets/img/icons/box.png"></icon-component>
+                            <icon-component iconSrc="../../src/assets/img/icons/car.png"></icon-component>
                             <div class="delivery-steps_row-description">
-                                <p class="Paragraph-red">1. Solicita un envío</p>
-                                <p class="Light-text Paragraph-small">Ingresa la dirección de recogida, la de entrega y las instrucciones para el mensajero</p>
+                                <p class="Paragraph-red">3. Entrega</p>
+                                <p class="Light-text Paragraph-small">Uno de nuestros mensajeros recogerá tu pedido y lo llevará a su destino en el menor tiempo posible</p>
                             </div>
                         </div>
                     </div>

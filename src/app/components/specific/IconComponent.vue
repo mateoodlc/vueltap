@@ -30,6 +30,7 @@
     <div class="IconComponent" 
         :style="{backgroundImage: 'url(' + this.iconSrc + ')', 
         width: this.small ? '27px': '55px',
-        height: this.small ? '27px': '55px',}">
+        height: this.small ? '27px': '55px',
+        marginRight: this.small ? '7px' : '45px'}">
     </div>
 </template>
