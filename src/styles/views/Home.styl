@@ -37,7 +37,7 @@ input
 
 .Home-banner_container
     position relative
-    width 100%
+    lost-center 90%
 
 .Home-banner_rotated
     position absolute
@@ -165,6 +165,51 @@ input
                 flex 1
                 flex-direction column
                 justify-content center
+
+.Home-plans_services
+    display flex
+    position relative
+    justify-content center
+    align-items center
+    width 100vw
+    padding 120px 0 100px 0
+    background $red
+    +below(800px)
+        padding 72px 0
+    .Home-plans_services-container
+        display flex
+        flex-direction column
+        justify-content space-evenly
+        width 90%
+        height 100%
+
+.plans_services-description
+    margin-bottom 50px
+    h2
+        margin-bottom 20px
+
+.plan-card_container
+    display flex
+    justify-content space-around
+    flex-wrap wrap
+    width 100%
+
+.plan-card
+    display flex
+    flex-direction column
+    justify-content space-around
+    align-items center
+    lost-column 3/12 0 13px
+    border-radius 30px
+    border 1px solid white
+    padding 15px 15px
+    max-width 278px
+    min-width 278px
+    +below(1280px)
+        lost-column 6/12 0 13px
+    .plan-card_details
+        margin 5px 0
+
 
 
 

@@ -145,7 +145,64 @@
                     </div>
                 </div>
             </section>
-            <section class=""></section>
+            <section class="Home-plans_services">
+                <div class="Home-plans_services-container">
+                    <div class="plans_services-description">
+                        <h2 class="Title">Planes y precios</h2>
+                        <p class="Center">En vueltap nos gusta hacer felices a nuestros clientes, por esa razón hemos querido ofrecer una serie de paquetes especiales con los que podrás beneficiarte y ahorrar dinero al momento de solicitar tu servicio</p>
+                    </div>
+                    <div class="plan-card_container">
+                        <div class="plan-card">
+                            <h3 class="Title">Básico</h3>
+                            <div class="plan-card_details">
+                                <h2 class="Paragraph-yellow">100 Km</h2>
+                                <p class="Center">COP $300.000</p>
+                            </div>
+                            <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
+                            <main-button
+                                buttonText = "Comprar"
+                                border
+                            ></main-button>
+                        </div>
+                        <div class="plan-card">
+                            <h3 class="Title">Básico</h3>
+                            <div class="plan-card_details">
+                                <h2 class="Paragraph-yellow">100 Km</h2>
+                                <p class="Center">COP $300.000</p>
+                            </div>
+                            <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
+                            <main-button
+                                buttonText = "Comprar"
+                                border
+                            ></main-button>
+                        </div>
+                        <div class="plan-card">
+                            <h3 class="Title">Básico</h3>
+                            <div class="plan-card_details">
+                                <h2 class="Paragraph-yellow">100 Km</h2>
+                                <p class="Center">COP $300.000</p>
+                            </div>
+                            <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
+                            <main-button
+                                buttonText = "Comprar"
+                                border
+                            ></main-button>
+                        </div>
+                        <div class="plan-card">
+                            <h3 class="Title">Básico</h3>
+                            <div class="plan-card_details">
+                                <h2 class="Paragraph-yellow">100 Km</h2>
+                                <p class="Center">COP $300.000</p>
+                            </div>
+                            <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
+                            <main-button
+                                buttonText = "Comprar"
+                                border
+                            ></main-button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </main-transition>
 </template>
