@@ -62,7 +62,7 @@ input
 .Home-banner_content_description
     lost-center 80%
 
-.Home-banner_content_deliver-card
+.Home-banner_content_delivery-card
     display flex
     flex-direction column
     justify-content space-around
@@ -74,16 +74,28 @@ input
     padding 0 72px
     background white
     border-radius 10px
-    .deliver-card_second_row
+    .delivery-card_second_row
         display flex
         width 100%
         justify-content space-around
-        .deliver-card_second_row-column
+        .delivery-card_second_row-column
             display flex
             flex 1
             flex-direction column
             &:first-child
                 margin-right 10px
+    .delivery-card_summary
+        display flex
+        justify-content space-between
+        align-items center
+        width 100%
+        .delivery-card_summary-total
+            display flex
+            justify-content flex-start
+            align-items center
+            flex 3
+            p
+                margin-right 15px
 
 
 
