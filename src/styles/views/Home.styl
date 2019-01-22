@@ -48,7 +48,7 @@ input
     transform-origin -50% 22%
     border-radius 500px
     margin-left -5%
-    +below(1280px)
+    +below(1290px)
         transform-origin -90% 0%
 
 .Home-banner_content
@@ -89,6 +89,8 @@ input
         justify-content space-between
         align-items center
         width 100%
+        +below(800px)
+            flex-direction column
         .delivery-card_summary-total
             display flex
             justify-content flex-start
@@ -96,6 +98,8 @@ input
             flex 3
             p
                 margin-right 15px
+            +below(800px)
+                margin-bottom 15px
 
 .Home-banner_steps
     display flex

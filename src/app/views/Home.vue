@@ -93,18 +93,19 @@
                             <div class="delivery-card_second_row-column">
                                 <div class="Inline-content">
                                     <icon-component iconSrc='../../src/assets/img/icons/pin.png' small></icon-component>
-                                    <p class="Inline-text Light-text">Ingresa dirección de recogida</p>
+                                    <p class="Inline-text Light-text Paragraph-small">Ingresa dirección de recogida</p>
                                 </div>
                                 <input type="text" placeholder="Ej: Calle 100 # 10 - 60">
                             </div>
                             <div class="delivery-card_second_row-column">
                                 <div class="Inline-content">
                                     <icon-component iconSrc='../../src/assets/img/icons/pin.png' small></icon-component>
-                                    <p class="Inline-text Light-text">Ingresa dirección de recogida</p>
+                                    <p class="Inline-text Light-text Paragraph-small">Ingresa dirección de recogida</p>
                                 </div>
                                 <input type="text" placeholder="Ej: Calle 100 # 10 - 60">
                             </div>
                         </div>
+                        <p class="Paragraph-red Paragraph-small" style="width: 100%; text-align: right;">Si necesitas incluir más puntos de entrega, haz <strong> click aquí</strong></p>
                         <div class="Separator-line"></div>
                         <div class="delivery-card_summary">
                             <div class="delivery-card_summary-total">
