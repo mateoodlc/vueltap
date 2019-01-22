@@ -6,12 +6,16 @@
     display block
     width 100%
     height auto
-    position absolute
 
 input
+    width 100%
+    height 44px
+    margin 10px 0
     background-color white
-    color $black
-    lost-column 1 / 2
+    color $grey
+    padding 0 10px
+    border-radius 2px
+    border 1px solid $grey
     +mobile()
         color $white
         lost-column 1 / 1
@@ -20,10 +24,20 @@ input
     max-width 600px
     aspect-ratio(16, 9)
 
+.Header-phone_number
+    display flex
+    position relative
+    justify-content center
+    align-items center
+    width 100vw
+    height 44px
+    background $subred
+    z-index 2
+    text-align center
+
 .Home-banner_container
     position relative
-    width 100vw
-    height 130vh
+    width 100%
 
 .Home-banner_rotated
     position absolute
@@ -34,5 +48,43 @@ input
     transform-origin -50% 22%
     border-radius 500px
     margin-left -5%
+    +below(1280px)
+        transform-origin -90% 0%
+
+.Home-banner_content
+    position relative
+    top 15%
+    left 50%
+    transform translate(-50%, 0%)
+    width 100%
+    z-index 2
+
+.Home-banner_content_description
+    lost-center 80%
+
+.Home-banner_content_deliver-card
+    display flex
+    flex-direction column
+    justify-content space-around
+    align-content center
+    align-items center
+    lost-center 100%
+    height 440px
+    margin 50px 0
+    padding 0 72px
+    background white
+    border-radius 10px
+    .deliver-card_second_row
+        display flex
+        width 100%
+        justify-content space-around
+        .deliver-card_second_row-column
+            display flex
+            flex 1
+            flex-direction column
+            &:first-child
+                margin-right 10px
+
+
 
 

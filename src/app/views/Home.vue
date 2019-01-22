@@ -1,6 +1,7 @@
 <script>
     import MainTransition from "app/transitions/GSAP";
     import VideoPlayer from "foo/components/VideoPlayer.vue";
+    import IconComponent from "app/components/specific/IconComponent.vue"
 
     export default {
         name: "Home",
@@ -16,7 +17,7 @@
             this.fetchData();
         },
         props: {},
-        components: {MainTransition, VideoPlayer},
+        components: {MainTransition, IconComponent},
         mounted() {
         },
         methods: {
@@ -74,6 +75,38 @@
     <main-transition>
         <div class="Home">
             <div class="Home-banner_container">
+                <div class="Home-banner_content">
+                    <div class="Home-banner_content_description">
+                        <h1>Envíos, Logística y Mensajería express en Bogotá</h1>
+                        <p class="Center">Vueltap te ofrece mensajeros disponibles por toda la ciudad para que hagan tus entregas de manera rápida y segura.</p>
+                    </div>
+                    <div class="Home-banner_content_deliver-card">
+                        <h2 class="Light-text">Solicita tu envío ahora</h2>
+                        <div class="deliver-card_second_row">
+                            <div class="deliver-card_second_row-column">
+                                <div class="Inline-content">
+                                    <icon-component
+                                        iconSrc = '../../src/assets/img/icons/pin.png'
+                                        small
+                                    ></icon-component>
+                                    <p class="Inline-text Light-text">Ingresa dirección de recogida</p>
+                                </div>
+                                <input type="text" placeholder="Ej: Calle 100 # 10 - 60">
+                            </div>
+                            <div class="deliver-card_second_row-column">
+                                <div class="Inline-content">
+                                    <icon-component
+                                        iconSrc = '../../src/assets/img/icons/pin.png'
+                                        small
+                                    ></icon-component>
+                                    <p class="Inline-text Light-text">Ingresa dirección de recogida</p>
+                                </div>
+                                <input type="text" placeholder="Ej: Calle 100 # 10 - 60">
+                            </div>
+                        </div>
+                        <div class="Separator-line"></div>
+                    </div>
+                </div>
                 <div class="Home-banner_rotated"></div>
             </div>
         </div>

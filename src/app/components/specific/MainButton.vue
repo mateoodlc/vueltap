@@ -22,6 +22,10 @@
                 type: String,
                 default: "#fff",
             },
+            large: {
+                type: Boolean,
+                default: false,
+            },
             small: {
                 type: Boolean,
                 default: false,
@@ -41,6 +45,9 @@
             iconSrc: {
                 type: String,
             },
+            route: {
+                type: Function,
+            }
         },
         components: {},
         methods: {},
@@ -49,7 +56,7 @@
 </script>
 
 <template>
-    <div class="MainButton" :style="{width: this.small ? '160px' : this.extraSmall ? '113px' : '225px', 
+    <button class="MainButton" @click="this.route" :style="{width: this.small ? '160px' : this.large ? '330px' : this.extraSmall ? '113px' : '225px', 
     backgroundColor: 
     border ? 'transparent' : red ? '#FF3D3D' : this.backgroundColor, 
     color: red ? '#fff' : this.border ? '#fff' : '#000', 
@@ -57,5 +64,5 @@
     }">
         <p>{{this.buttonText}}</p>
         <img v-if="!this.small" v-show="!this.extraSmall" :src="red ? yellowSrc : blackSrc" width=19/>
-    </div>
+    </button>
 </template>

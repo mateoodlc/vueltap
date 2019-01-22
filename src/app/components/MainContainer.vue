@@ -32,6 +32,9 @@
 
 <template>
     <div class="MainContainer">
+        <div class="Header-phone_number">
+            <p class="Paragraph-small">LLÁMANOS (313) 655-1009</p>
+        </div>
         <div class="Content-container">
             <app-header></app-header>
             <keep-alive>
