@@ -1,0 +1,22 @@
+// Form
+
+@import "~styles/vars";
+
+.Form
+    display block
+
+.with_border
+    input
+        border 2px solid white
+        color white
+        &::placeholder
+            color white
+        &:focus
+            border 3px solid white
+
+        
+.inline_input
+    input
+        +above(800px)
+            width 49%
+

@@ -4,7 +4,8 @@
     import IconComponent from "app/components/specific/IconComponent.vue"
     import MainButton from "app/components/specific/MainButton.vue"
     import ClientsSlider from "app/components/specific/ClientsSlider.vue"
-    import StepsSlider from "app/components/StepsSlider.vue"
+    import StepsSlider from "app/components/specific/StepsSlider.vue"
+    import CustomForm from "app/components/specific/CustomForm.vue"
     
     export default {
         name: "Home",
@@ -26,6 +27,7 @@
             MainButton,
             ClientsSlider,
             StepsSlider,
+            CustomForm,
         },
         mounted() {},
         methods: {
@@ -116,10 +118,7 @@
                                 <p class="Light-text">Valor de tu envío</p>
                                 <h3 class="Light-text">$50.400 COP</h3>
                             </div>
-                            <main-button 
-                                buttonText="Solicitar" 
-                                red
-                            >
+                            <main-button buttonText="Solicitar" red>
                             </main-button>
                         </div>
                     </div>
@@ -167,11 +166,7 @@
                                 <p class="Center">COP $300.000</p>
                             </div>
                             <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
-                            <main-button
-                                buttonText = "Comprar"
-                                border
-                                noIcon
-                            ></main-button>
+                            <main-button buttonText="Comprar" border noIcon></main-button>
                         </div>
                         <div class="plan-card">
                             <h3 class="Title">Básico</h3>
@@ -180,11 +175,7 @@
                                 <p class="Center">COP $300.000</p>
                             </div>
                             <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
-                            <main-button
-                                buttonText = "Comprar"
-                                border
-                                noIcon
-                            ></main-button>
+                            <main-button buttonText="Comprar" border noIcon></main-button>
                         </div>
                         <div class="plan-card">
                             <h3 class="Title">Básico</h3>
@@ -193,11 +184,7 @@
                                 <p class="Center">COP $300.000</p>
                             </div>
                             <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
-                            <main-button
-                                buttonText = "Comprar"
-                                border
-                                noIcon
-                            ></main-button>
+                            <main-button buttonText="Comprar" border noIcon></main-button>
                         </div>
                         <div class="plan-card">
                             <h3 class="Title">Básico</h3>
@@ -206,11 +193,7 @@
                                 <p class="Center">COP $300.000</p>
                             </div>
                             <p class="Paragraph-small Center" style="margin: 10px 0">No incluye descuento de obsequio</p>
-                            <main-button
-                                buttonText = "Comprar"
-                                border
-                                noIcon
-                            ></main-button>
+                            <main-button buttonText="Comprar" border noIcon></main-button>
                         </div>
                     </div>
                 </div>
@@ -226,7 +209,23 @@
                     <clients-slider></clients-slider>
                 </div>
             </section>
-        </div>
+            <section class="Home-form">
+                <div class="Home-form--container">
+                    <h2>¿Listo para empezar a utilizar Vueltap?</h2>
+                    <div class="Home-form--content">
+                        <div class="box-image"></div>
+                        <custom-form
+                            placeholder = "Tu nombre"
+                            placeholder2 = "Tu correo electrónico"
+                            placeholder3 = "Crea una contraseña"
+                            type = "text"
+                            border
+                            fieldsNumber = "3"
+                        ></custom-form>
+                    </div>
+                </div>
+            </section>
+            </div>
     </main-transition>
 </template>
 

@@ -19,11 +19,14 @@
                         disableOnInteraction: false,
                     },
                     breakpoints: {
+                        800: {
+                            slidesPerView: 1,
+                            spaceBetween: 200,
+                        },
                         // when window width is <= 640px
                         640: {
                             slidesPerView: 1,
                             spaceBetween: 30,
-                            centeredSlides: true,
                         }
                     }
                 // some swiper options/callbacks
