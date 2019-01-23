@@ -5,6 +5,7 @@
     import MainButton from "app/components/specific/MainButton.vue"
     import ClientsSlider from "app/components/specific/ClientsSlider.vue"
     import StepsSlider from "app/components/specific/StepsSlider.vue"
+    import SponsorSlider from "app/components/specific/SponsorSlider.vue"
     import CustomForm from "app/components/specific/CustomForm.vue"
     
     export default {
@@ -28,6 +29,7 @@
             ClientsSlider,
             StepsSlider,
             CustomForm,
+            SponsorSlider,
         },
         mounted() {},
         methods: {
@@ -220,9 +222,14 @@
                             placeholder3 = "Crea una contraseña"
                             type = "text"
                             border
-                            fieldsNumber = "3"
+                            fieldsNumber = 3
                         ></custom-form>
                     </div>
+                </div>
+            </section>
+            <section class="Home-sponsors">
+                <div class="Home-sponsors--container">
+                    <sponsor-slider></sponsor-slider>
                 </div>
             </section>
             </div>
