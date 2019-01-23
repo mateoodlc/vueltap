@@ -138,10 +138,10 @@ input
         flex-direction column-reverse
         align-items center       
     .delivery-person_image
-        width 50% 
+        width 80% 
         background-size contain
         background-repeat no-repeat
-        background-position center
+        background-position center left
         +below(800px)
             height 538px
             background-position center bottom
@@ -151,8 +151,9 @@ input
         display flex
         flex-direction column
         justify-content space-between
-        width 50%
+        padding 100px 0
         +below(800px)
+            padding 0
             width 80%
         +below(600px)
             width 90%
@@ -199,16 +200,48 @@ input
     flex-direction column
     justify-content space-around
     align-items center
-    lost-column 3/12 0 13px
+    lost-waffle 3/12 0 13px
     border-radius 30px
     border 1px solid white
     padding 15px 15px
     max-width 278px
     min-width 278px
     +below(1280px)
-        lost-column 6/12 0 13px
+        lost-waffle 6/12 0 13px
     .plan-card_details
         margin 5px 0
+    
+.Home-sliding_steps
+    display flex
+    justify-content center
+    align-items center
+    min-height 100vh
+    width 100vw
+    padding 120px 0
+    background $subBackground
+    +below(600px)
+        text-align center
+    .Home-sliding_steps--container
+        width 90%
+    
+.Home-clients
+    display flex
+    justify-content center
+    align-items center
+    width 100vw
+    min-height 80vh
+    background $background
+    padding 120px 0
+    .Home-clients--container
+        width 100%
+        .swiper-slide
+            +below(800px)
+                display flex
+                justify-content center
+             
+                
+
+
 
 
 

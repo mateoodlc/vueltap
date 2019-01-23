@@ -52,10 +52,13 @@
             buttonText = "Reserva tu pedido"
             border
             small
+            noIcon
+            style = "margin-right: 10px;"
         ></main-button>
         <main-button
             buttonText = "Ingresa"
             extraSmall
+            noIcon
         ></main-button>
     </div>
     <!--<router-link to="/">{{$t("home.title")}}</router-link>

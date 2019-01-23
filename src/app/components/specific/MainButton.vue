@@ -45,6 +45,10 @@
             iconSrc: {
                 type: String,
             },
+            noIcon: {
+                type: Boolean,
+                default: false,
+            },
             route: {
                 type: Function,
             }
@@ -63,6 +67,6 @@
     border: this.border ? '2px solid white' : none,
     }">
         <p>{{this.buttonText}}</p>
-        <img v-if="!this.small" v-show="!this.extraSmall" :src="red ? yellowSrc : blackSrc" width=19/>
+        <img v-if="!this.noIcon" v-show="!this.extraSmall || !this.noIcon" :src="red ? yellowSrc : blackSrc" width=19/>
     </button>
 </template>

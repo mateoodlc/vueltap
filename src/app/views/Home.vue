@@ -3,6 +3,8 @@
     import VideoPlayer from "foo/components/VideoPlayer.vue";
     import IconComponent from "app/components/specific/IconComponent.vue"
     import MainButton from "app/components/specific/MainButton.vue"
+    import ClientsSlider from "app/components/specific/ClientsSlider.vue"
+    import StepsSlider from "app/components/StepsSlider.vue"
     
     export default {
         name: "Home",
@@ -21,7 +23,9 @@
         components: {
             MainTransition,
             IconComponent,
-            MainButton
+            MainButton,
+            ClientsSlider,
+            StepsSlider,
         },
         mounted() {},
         methods: {
@@ -112,7 +116,11 @@
                                 <p class="Light-text">Valor de tu envío</p>
                                 <h3 class="Light-text">$50.400 COP</h3>
                             </div>
-                            <main-button buttonText="Solicitar" red></main-button>
+                            <main-button 
+                                buttonText="Solicitar" 
+                                red
+                            >
+                            </main-button>
                         </div>
                     </div>
                 </div>
@@ -162,6 +170,7 @@
                             <main-button
                                 buttonText = "Comprar"
                                 border
+                                noIcon
                             ></main-button>
                         </div>
                         <div class="plan-card">
@@ -174,6 +183,7 @@
                             <main-button
                                 buttonText = "Comprar"
                                 border
+                                noIcon
                             ></main-button>
                         </div>
                         <div class="plan-card">
@@ -186,6 +196,7 @@
                             <main-button
                                 buttonText = "Comprar"
                                 border
+                                noIcon
                             ></main-button>
                         </div>
                         <div class="plan-card">
@@ -198,9 +209,21 @@
                             <main-button
                                 buttonText = "Comprar"
                                 border
+                                noIcon
                             ></main-button>
                         </div>
                     </div>
+                </div>
+            </section>
+            <section class="Home-sliding_steps">
+                <div class="Home-sliding_steps--container">
+                    <h2>Vueltap, la solución que te ofrece todo lo que necesitas</h2>
+                    <steps-slider></steps-slider>
+                </div>
+            </section>
+            <section class="Home-clients">
+                <div class="Home-clients--container">
+                    <clients-slider></clients-slider>
                 </div>
             </section>
         </div>
