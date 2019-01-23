@@ -39,13 +39,16 @@
 </script>
 
 <template>
-    <div class="Slider">
+    <div class="ClientsSlider">
         <swiper :options="swiperOption" ref="mySwiper2" @someSwiperEvent="callback">
             <!-- slides -->
             <swiper-slide>
                 <div class="client_card">
                     <div class="client_card--image" style="background-image: url('../../src/assets/img/client.jpeg')"></div>
                     <div class="client_card--content">
+                        <!--
+                            HERE IS THE CLIENTS INFORMATION, SLIDE BY SLIDE
+                            -->
                         <p class="Paragraph-red">Vueltap facilitó mi trabajo</p>
                         <p class="Light-text Paragraph-small Font-light">"Encantada con la eficiencia y rapidez con la que entregan nuestros pedidos."</p>
                         <p class="Light-text Paragraph-small">Carolina Estupiñán</p>
@@ -58,6 +61,9 @@
                 <div class="client_card">
                     <div class="client_card--image" style="background-image: url('../../src/assets/img/client.jpeg')"></div>
                     <div class="client_card--content">
+                        <!--
+                            HERE IS THE CLIENTS INFORMATION, SLIDE BY SLIDE
+                            -->
                         <p class="Paragraph-red">Vueltap facilitó mi trabajo</p>
                         <p class="Light-text Paragraph-small Font-light">"Encantada con la eficiencia y rapidez con la que entregan nuestros pedidos."</p>
                         <p class="Light-text Paragraph-small">Carolina Estupiñán</p>
@@ -70,6 +76,9 @@
                 <div class="client_card">
                     <div class="client_card--image" style="background-image: url('../../src/assets/img/client.jpeg')"></div>
                     <div class="client_card--content">
+                        <!--
+                            HERE IS THE CLIENTS INFORMATION, SLIDE BY SLIDE
+                            -->
                         <p class="Paragraph-red">Vueltap facilitó mi trabajo</p>
                         <p class="Light-text Paragraph-small Font-light">"Encantada con la eficiencia y rapidez con la que entregan nuestros pedidos."</p>
                         <p class="Light-text Paragraph-small">Carolina Estupiñán</p>
@@ -82,6 +91,9 @@
                 <div class="client_card">
                     <div class="client_card--image" style="background-image: url('../../src/assets/img/client.jpeg')"></div>
                     <div class="client_card--content">
+                        <!--
+                            HERE IS THE CLIENTS INFORMATION, SLIDE BY SLIDE
+                            -->
                         <p class="Paragraph-red">Vueltap facilitó mi trabajo</p>
                         <p class="Light-text Paragraph-small Font-light">"Encantada con la eficiencia y rapidez con la que entregan nuestros pedidos."</p>
                         <p class="Light-text Paragraph-small">Carolina Estupiñán</p>
@@ -94,6 +106,9 @@
                 <div class="client_card">
                     <div class="client_card--image" style="background-image: url('../../src/assets/img/client.jpeg')"></div>
                     <div class="client_card--content">
+                        <!--
+                            HERE IS THE CLIENTS INFORMATION, SLIDE BY SLIDE
+                            -->
                         <p class="Paragraph-red">Vueltap facilitó mi trabajo</p>
                         <p class="Light-text Paragraph-small Font-light">"Encantada con la eficiencia y rapidez con la que entregan nuestros pedidos."</p>
                         <p class="Light-text Paragraph-small">Carolina Estupiñán</p>
@@ -106,6 +121,9 @@
                 <div class="client_card">
                     <div class="client_card--image" style="background-image: url('../../src/assets/img/client.jpeg')"></div>
                     <div class="client_card--content">
+                        <!--
+                            HERE IS THE CLIENTS INFORMATION, SLIDE BY SLIDE
+                            -->
                         <p class="Paragraph-red">Vueltap facilitó mi trabajo</p>
                         <p class="Light-text Paragraph-small Font-light">"Encantada con la eficiencia y rapidez con la que entregan nuestros pedidos."</p>
                         <p class="Light-text Paragraph-small">Carolina Estupiñán</p>
@@ -114,6 +132,7 @@
                     </div>
                 </div>
             </swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
     </div>
 </template>
