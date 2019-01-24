@@ -49,9 +49,13 @@
                 type: Boolean,
                 default: false,
             },
+            inlineButton: {
+              type: Boolean,
+              default: false,  
+            },
             route: {
                 type: Function,
-            }
+            },
         },
         components: {},
         methods: {},
@@ -60,12 +64,13 @@
 </script>
 
 <template>
-    <button class="MainButton" @click="this.route" :style="{width: this.small ? '160px' : this.large ? '330px' : this.extraSmall ? '113px' : '225px', 
-    backgroundColor: 
-    border ? 'transparent' : red ? '#FF3D3D' : this.backgroundColor, 
-    color: red ? '#fff' : this.border ? '#fff' : '#000', 
-    border: this.border ? '2px solid white' : none,
-    }">
+    <button class="MainButton" @click="this.route" :class="{inlineButton: this.inlineButton, smallButton: this.small, largeButton: this.large}" 
+    :style="{
+        width: this.extraSmall ? '113px' : '225px', 
+        backgroundColor: border ? 'transparent' : red ? '#FF3D3D' : this.backgroundColor, 
+        color: red ? '#fff' : this.border ? '#fff' : '#000', 
+        border: this.border ? '2px solid white' : none,
+        }">
         <p>{{this.buttonText}}</p>
         <img v-if="!this.noIcon" v-show="!this.extraSmall || !this.noIcon" :src="red ? yellowSrc : blackSrc" width=19/>
     </button>

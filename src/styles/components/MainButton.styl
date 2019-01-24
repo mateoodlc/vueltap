@@ -5,12 +5,13 @@
 .MainButton
     display flex
     position relative
-    width 150px
+    width 225px
     height 50px
     border-radius 100px
     justify-content center
     align-content center
     align-items center
+    background $yellow
     p
         height none
         font-size 14px
@@ -18,3 +19,9 @@
         position absolute
         right 30px
         margin 0
+    &.small
+        width 160px
+    &.large
+        width 330px
+    &.inlineButton
+        display inline-flex

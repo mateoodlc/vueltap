@@ -4,26 +4,26 @@
 <template>
     <div class="SponsorSlider">
         <swiper :options="swiperOption">
+            <!--
+                HERE YOU MAY MODIFY SPONSORS IMAGES SOURCE
+            -->
             <swiper-slide>
-                <div class="sponsor-image"></div>
+                <div class="sponsor-image" style="background-image: url('../../src/assets/img/sponsors/logo1.png')"></div>
             </swiper-slide>
             <swiper-slide>
-                <div class="sponsor-image"></div>
+                <div class="sponsor-image" style="background-image: url('../../src/assets/img/sponsors/logo2.png')"></div>
             </swiper-slide>
             <swiper-slide>
-                <div class="sponsor-image"></div>
+                <div class="sponsor-image" style="background-image: url('../../src/assets/img/sponsors/logo3.png')"></div>
             </swiper-slide>
             <swiper-slide>
-                <div class="sponsor-image"></div>
+                <div class="sponsor-image" style="background-image: url('../../src/assets/img/sponsors/logo4.png')"></div>
             </swiper-slide>
             <swiper-slide>
-                <div class="sponsor-image"></div>
+                <div class="sponsor-image" style="background-image: url('../../src/assets/img/sponsors/logo5.png')"></div>
             </swiper-slide>
             <swiper-slide>
-                <div class="sponsor-image"></div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="sponsor-image"></div>
+                <div class="sponsor-image" style="background-image: url('../../src/assets/img/sponsors/logo6.png')"></div>
             </swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
         </swiper>
@@ -44,8 +44,10 @@
         data() {
             return {
                 swiperOption: {
-                    slidesPerView: 5,
+                    slidesPerView: 6,
                     spaceBetween: 30,
+                    loop: true,
+                    freeMode: true,
                     pagination: {
                         el: '.swiper-pagination',
                         clickable: true,

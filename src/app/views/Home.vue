@@ -7,6 +7,9 @@
     import StepsSlider from "app/components/specific/StepsSlider.vue"
     import SponsorSlider from "app/components/specific/SponsorSlider.vue"
     import CustomForm from "app/components/specific/CustomForm.vue"
+    import FooterComponent from "app/components/FooterComponent.vue"
+    import vSelect from '../../../node_modules/vue-select/src/components/Select.vue'
+
     
     export default {
         name: "Home",
@@ -17,6 +20,16 @@
                 loading: true,
                 error: false,
             };
+            options: [
+                { countryCode: "AU", countryName: "Australia" },
+                { countryCode: "CA", countryName: "Canada" },
+                { countryCode: "CN", countryName: "China" },
+                { countryCode: "DE", countryName: "Germany" },
+                { countryCode: "JP", countryName: "Japan" },
+                { countryCode: "MX", countryName: "Mexico" },
+                { countryCode: "CH", countryName: "Switzerland" },
+                { countryCode: "US", countryName: "United States" }
+            ]
         },
         created() {
             this.fetchData();
@@ -30,6 +43,8 @@
             StepsSlider,
             CustomForm,
             SponsorSlider,
+            FooterComponent,
+            vSelect,
         },
         mounted() {},
         methods: {
@@ -221,8 +236,10 @@
                             placeholder2 = "Tu correo electrónico"
                             placeholder3 = "Crea una contraseña"
                             type = "text"
+                            buttonText = "Registrarme"
                             border
                             fieldsNumber = 3
+                            select
                         ></custom-form>
                     </div>
                 </div>
@@ -232,6 +249,7 @@
                     <sponsor-slider></sponsor-slider>
                 </div>
             </section>
+            <footer-component></footer-component>
             </div>
     </main-transition>
 </template>

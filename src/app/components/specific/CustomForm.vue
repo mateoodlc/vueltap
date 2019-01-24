@@ -2,11 +2,23 @@
 
 <script>
     import MainButton from 'app/components/specific/MainButton.vue'
+    import vSelect from '../../../../node_modules/vue-select/src/components/Select.vue'
     
     export default {
         name: "CustomForm",
         data() {
-            return {};
+            return {
+                selectOptions: [
+                    {
+                        userCode: "M",
+                        type: "Mensajero",
+                    },
+                    {
+                        userCode: "C",
+                        type: "Client",
+                    }
+                ]
+            };
         },
         props: {
             placeholder: {
@@ -45,23 +57,36 @@
             inlineInput: {
                 type: Boolean,
                 default: false,
-            }
+            },
+            buttonText: {
+                type: String,
+                required: true,
+            },
+            select: {
+                type: Boolean,
+                default: false,
+            },
         },
         components: {
-            MainButton
+            MainButton,
+            vSelect
         },
         methods: {},
-        computed: {}
+        computed: {},
     };
 </script>
 
 <template>
     <div class="CustomForm" :class="{ with_border: this.border, inline_input: this.inlineInput }">
+        <v-select style="color: 'black'" placeholder="Identificate" v-if="this.select" label="Identifícate" :options="[{label: 'foo', value: 'Foo'}]"></v-select>
         <input :type="this.type" :placeholder="this.placeholder">
         <input v-if="this.fieldsNumber > 1" :type="this.type" :placeholder="this.placeholder2">
         <input v-if="this.fieldsNumber > 2" :type="this.type" :placeholder="this.placeholder3">
         <input v-if="this.fieldsNumber > 3" :type="this.type" :placeholder="this.placeholder4">
         <input v-if="this.fieldsNumber > 4" :type="this.type" :placeholder="this.placeholder5">
-        <main-button buttonText="Registrarme"></main-button>
+        <main-button 
+        :buttonText="this.buttonText"
+        inlineButton
+        ></main-button>
     </div>
 </template>

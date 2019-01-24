@@ -1,0 +1,75 @@
+// FooterComponent
+
+@import "~styles/vars";
+
+.FooterComponent
+    display flex
+    justify-content center
+    width 100%
+    min-height 570px
+    background $subBackground
+    .Separator-line
+        margin-top 100px
+        margin-bottom 50px
+
+.Footer--container
+    display flex
+    flex-direction column
+    justify-content space-around
+    width 80%
+    padding 120px 0
+    +above(1281px)
+        width 70%
+    .Footer--row
+        display flex
+        justify-content space-between
+        width 100%
+        +below(800px)
+            flex-direction column
+            justify-content center
+            align-items center
+            text-align center
+        &:nth-child(2)
+            margin 15px 0 80px 0
+            +below(800px)
+                margin 15px 0 20px 0
+        +above(1281px) 
+            justify-content space-around
+        div
+            margin 15px 0
+        .Footer--logo
+            width 167px
+            height 48px
+            background-size contain
+            background-repeat no-repeat
+            background-position center        
+        .CustomForm
+            width 60%
+            .MainButton
+                display inline-flex
+            +below(800px)
+                width 90%
+        .Footer--row--column
+            display flex
+            flex-direction column
+            justify-content space-around
+            +below(800px)
+                margin-top 15px
+            p
+                &:first-child
+                    margin-bottom 15px
+        .Footer--social
+            display flex
+            min-width 18%
+            justify-content space-around
+            align-items center
+            +below(800px)
+                min-width 79%
+            .Footer--social--icon
+                width 50px
+                height 50px
+                border-radius 50px
+                background white
+
+
+

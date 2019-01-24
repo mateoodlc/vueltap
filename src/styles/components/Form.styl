@@ -9,6 +9,7 @@
     input
         border 2px solid white
         color white
+        background transparent
         &::placeholder
             color white
         &:focus
@@ -19,4 +20,24 @@
     input
         +above(800px)
             width 49%
+
+.Form .dropdown li {
+  border-bottom: 1px solid rgba(112, 128, 144, 0.1)
+}
+
+.Form .dropdown li:last-child {
+  border-bottom: none;
+}
+
+.Form .dropdown li a {
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-size: 1.25em;
+}
+
+.Form .dropdown li a .fa {
+  padding-right: 0.5em;
+}
 
