@@ -8,16 +8,7 @@
         name: "CustomForm",
         data() {
             return {
-                selectOptions: [
-                    {
-                        userCode: "M",
-                        type: "Mensajero",
-                    },
-                    {
-                        userCode: "C",
-                        type: "Client",
-                    }
-                ]
+                formType: false,
             };
         },
         props: {

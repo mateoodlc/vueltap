@@ -1,6 +1,5 @@
 <script>
     import MainTransition from "app/transitions/GSAP";
-    import VideoPlayer from "foo/components/VideoPlayer.vue";
     import IconComponent from "app/components/specific/IconComponent.vue"
     import MainButton from "app/components/specific/MainButton.vue"
     import ClientsSlider from "app/components/specific/ClientsSlider.vue"

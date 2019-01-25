@@ -29,26 +29,21 @@
 .Home-banner_rotated
     position absolute
     width 120vw
-    height 1998px
+    min-width 1900px
+    height 1750px
+    top -75%
+    left -20%
     background red
-    transform rotate(-45deg)
-    transform-origin -50% 22%
+    transform rotate(45deg)
     border-radius 500px
-    margin-left -5%
     +below(1290px)
-        height 1580px
-        transform-origin -90% 0%
-    +below(900px)
-        transform-origin -100% 0%
+        transform-origin 60vw 925px
     +below(800px)
-        height 1415px
-        width 1415px
-        transform-origin -1600px 210px
+        top -80%
+        left -90%
     +below(600px)
-        width 1000px
-        height 1000px
-        top 0
-        transform-origin 6% 75%
+        top -95%
+        left -230%
 
 .Home-banner_content
     position relative

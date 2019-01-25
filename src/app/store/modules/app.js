@@ -6,12 +6,14 @@ import { environment } from "src/config";
 export const LOCALE_CHANGED = "locale/changed";
 export const LOCALE_LOADING = "locale/loading";
 export const ASSET_LOADING = 'app/loading';
+export const MENU_OPEN = 'locale/menuopened'
 
 const state = {
     public: environment.url.public,
     locale: "",
     locale_loading: false,
-    loading: true
+    loading: true,
+    menuOpened: false,
 };
 
 const actions = {
@@ -36,6 +38,9 @@ const mutations = {
     },
     [ASSET_LOADING](state, payload){
         state.loading = payload;
+    },
+    MENU_OPEN: (state) => {
+        state.menuOpened = !state.menuOpened;
     }
 };
 
@@ -46,6 +51,9 @@ const getters = {
     public: state => {
         return state.public;
     },
+    menuOpened: state => {
+        return state.menuOpened;
+    }
 };
 
 export default {state, actions, mutations, getters};
